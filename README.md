@@ -82,3 +82,21 @@ Important:
 EXPOSE is documentation.
 
 The actual browser access happens using docker run -p.
+
+
+**Build the Docker Image**
+Run:
+
+docker build -t my-html-app .
+
+Notice the dot (.).
+
+It means:
+
+Build using the current directory.
+
+Expected output:
+
+Successfully built xxxxxxx
+Successfully tagged my-html-app:latest
+
