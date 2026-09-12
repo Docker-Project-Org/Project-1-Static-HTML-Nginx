@@ -33,4 +33,52 @@ Access the application in a browser
 
 Understand each Docker command
 
-Troubleshoot common issues
+Project Folder Structure:
+=========================
+<img width="347" height="148" alt="image" src="https://github.com/user-attachments/assets/c4a6c595-d924-4ab1-8ff5-0d9eeba35ce7" />
+
+Understand the Dockerfile:
+==========================
+This file tells Docker how to build the application.
+
+**Line 1**
+FROM nginx:alpine
+
+Meaning:
+
+Download the lightweight Nginx image.
+
+alpine is a very small Linux distribution.
+
+Think of this as the base operating system.
+
+**Line 2**
+COPY index.html /usr/share/nginx/html/index.html
+
+Meaning:
+
+Copy your website into the Nginx web server.
+
+Source:
+
+index.html
+
+Destination:
+
+/usr/share/nginx/html/
+
+Nginx automatically serves files from this folder.
+
+
+**Line 3**
+EXPOSE 80
+
+Meaning:
+
+Tell Docker that the application uses port 80.
+
+Important:
+
+EXPOSE is documentation.
+
+The actual browser access happens using docker run -p.
