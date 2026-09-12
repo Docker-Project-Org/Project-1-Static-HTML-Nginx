@@ -114,3 +114,69 @@ Verify the Image
 List images.
 
 docker images
+
+<img width="972" height="115" alt="image" src="https://github.com/user-attachments/assets/616d1825-cff3-4bf8-97a2-7c5feb347514" />
+
+Important columns:
+<img width="483" height="152" alt="image" src="https://github.com/user-attachments/assets/755c815d-75a6-4ee5-ac9c-9dbfb6efcb3d" />
+
+Run the Container
+=================
+
+Run:
+
+docker run -d -p 8080:80 --name html-container my-html-app
+
+Breakdown:
+
+<img width="595" height="225" alt="image" src="https://github.com/user-attachments/assets/e142b4f0-78f8-4666-97ec-fdb03ce6c6a8" />
+
+Port Mapping Explained
+======================
+
+This is the most important concept.
+
+<img width="751" height="174" alt="image" src="https://github.com/user-attachments/assets/4e0bb5b5-f30a-47c9-b4f4-2959b589d028" />
+Meaning:
+
+Browser uses 8080
+
+Container internally uses 80
+
+Command:
+
+8080:80
+Read it as:
+
+My computer's port 8080 goes to the container's port 80.
+
+Verify the Running Container
+============================
+
+Check:
+
+docker ps
+<img width="965" height="132" alt="image" src="https://github.com/user-attachments/assets/cc02346e-87a2-4cd3-9b9b-73dcc66fa155" />
+Important part:
+
+0.0.0.0:8080->80/tcp
+
+This confirms browser access is available.
+
+Access the Application
+======================
+
+Open your browser.
+
+Visit:
+
+http://localhost:8080
+
+
+<img width="1364" height="384" alt="image" src="https://github.com/user-attachments/assets/a3077bf6-3b6a-4d4d-8e00-6c947c490e37" />
+
+Test from Terminal
+==================
+curl http://localhost:8080
+
+<img width="620" height="254" alt="image" src="https://github.com/user-attachments/assets/57e4acd1-e7b9-49c7-b65c-a8b1ec81371d" />
