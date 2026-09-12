@@ -100,3 +100,17 @@ Expected output:
 Successfully built xxxxxxx
 Successfully tagged my-html-app:latest
 
+
+What Happened?
+================
+
+Docker performed these steps.
+<img width="543" height="440" alt="image" src="https://github.com/user-attachments/assets/03899569-b085-4e6d-b50d-4029a12a1932" />
+
+
+Verify the Image
+================
+
+List images.
+
+docker images
