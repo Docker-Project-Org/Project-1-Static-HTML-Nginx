@@ -45,6 +45,7 @@ _**Line 1**_
 FROM nginx:alpine
 
 Meaning:
+--------
 
 Download the lightweight Nginx image.
 
@@ -56,6 +57,7 @@ _**Line 2**_
 COPY index.html /usr/share/nginx/html/index.html
 
 Meaning:
+--------
 
 Copy your website into the Nginx web server.
 
@@ -70,10 +72,11 @@ Destination:
 Nginx automatically serves files from this folder.
 
 
-**Line 3**
+_**Line 3** _
 EXPOSE 80
 
 Meaning:
+--------
 
 Tell Docker that the application uses port 80.
 
@@ -102,7 +105,7 @@ Successfully tagged my-html-app:latest
 
 
 What Happened?
-================
+==============
 
 Docker performed these steps.
 <img width="543" height="440" alt="image" src="https://github.com/user-attachments/assets/03899569-b085-4e6d-b50d-4029a12a1932" />
