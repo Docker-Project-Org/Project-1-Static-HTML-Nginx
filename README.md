@@ -41,7 +41,7 @@ Understand the Dockerfile:
 ==========================
 This file tells Docker how to build the application.
 
-**Line 1**
+_**Line 1**_
 FROM nginx:alpine
 
 Meaning:
@@ -52,7 +52,7 @@ alpine is a very small Linux distribution.
 
 Think of this as the base operating system.
 
-**Line 2**
+_**Line 2**_
 COPY index.html /usr/share/nginx/html/index.html
 
 Meaning:
